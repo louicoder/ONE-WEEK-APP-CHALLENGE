@@ -1,0 +1,15 @@
+{
+  "name": "OWC-BE",
+  "version": "1.0.0",
+  "description": "Backend project for the one week challenge.",
+  "main": "index.js",
+  "repository": "git@github.com:louiCoder/ONE-WEEK-APP-CHALLENGE.git",
+  "author": "louicoder <musanje2010@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
