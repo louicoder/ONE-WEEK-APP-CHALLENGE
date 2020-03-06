@@ -61,18 +61,9 @@
       "contributions": [
         "code"
       ]
-    },
-    {
-      "login": "moremiles",
-      "name": "moremiles",
-      "avatar_url": "https://avatars2.githubusercontent.com/u/5358356?v=4",
-      "profile": "https://github.com/morelmiles",
-      "contributions": [
-        "code"
-      ]
     }
   ],
-  "contributorsPerLine": 7,
+  "contributorsPerLine": 6,
   "projectName": "ONE-WEEK-APP-CHALLENGE",
   "projectOwner": "louiCoder",
   "repoType": "github",
