@@ -16,6 +16,15 @@
         "review",
         "talk"
       ]
+    },
+    {
+      "login": "SpartanWK",
+      "name": "Wesley K Spartan",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/43061081?v=4",
+      "profile": "https://wesleyspartan.com",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
