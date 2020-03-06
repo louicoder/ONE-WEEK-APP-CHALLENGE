@@ -1,0 +1,9 @@
+{
+  "name": "owc-socket-server",
+  "version": "1.0.0",
+  "description": "Asocket server for one week challenge apps",
+  "main": "index.js",
+  "repository": "https://github.com/louiCoder/ONE-WEEK-APP-CHALLENGE.git",
+  "author": "Louis Musanje Michael",
+  "license": "MIT"
+}
