@@ -1,0 +1,27 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "louiCoder",
+      "name": "Musanje Louis Michael",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/32771081?v=4",
+      "profile": "https://github.com/louiCoder",
+      "contributions": [
+        "maintenance",
+        "code",
+        "review",
+        "talk"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "ONE-WEEK-APP-CHALLENGE",
+  "projectOwner": "louiCoder",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
