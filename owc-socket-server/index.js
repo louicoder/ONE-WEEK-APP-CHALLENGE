@@ -2,11 +2,8 @@ const app = require('express')();
 const server = require('http').createServer(app);
 const io = require('socket.io').listen(server);
 
-app.get('/', (req, res) => {
-  io.on('connection', (socket) => {
-    console.log('user connected');
-  });
-  return res.json({ username: 'louicoder' });
+io.on('connection', (socket) => {
+  console.log('user connected');
 });
 
 server.listen(3000, () => {
