@@ -4,6 +4,34 @@
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 This project intends to enable contributors to create a simple application from start to finish in one week.
 
+## FRONT-END:
+The web application will is built in React Js but also Using Redux and Redu-Saga. Navigate to the folder owc-frontend to start making changes
+
+### Instructions:
+- clone the repository `git clone https://github.com/louiCoder/ONE-WEEK-APP-CHALLENGE.git`.
+- navigate to folder `owc-frontend`. MAKE SURE YOU ARE IN `owc-frontend` directory before continuing.
+- install dependencies `npm install` or `yarn install`
+- run the application `yarn start`
+
+## BACK-END:
+The Backend is an API built using NodeJS, Mongoose, Firebase and MongoDB.
+
+### instructions:
+- clone the repository `git clone https://github.com/louiCoder/ONE-WEEK-APP-CHALLENGE.`
+- navigate to folder `owc-backend` and make sure you are indeed in that directory.
+- install dependencies `npm install` or `yarn install`.
+- run the application in development `yarn dev`.
+
+## MOBILE:
+The Mobile App is built in React Native and Redux + Redux-Saga for state management.
+- Make sure you have installed an ndroid or ios simulator.
+- Enable developer options on your phone.
+- If using a physical device enable usb debugging after confirming that developer options are enable too.
+  - connect the physical device to the computer
+  - Install dependencies with `npm install` or `yarn install`
+  - start the bundler server with `npm start` or `yarn start`
+  - without closing the budler server, run another terminal window and run the command `react-native android` for android and `react-native ios` for iOS platforms respectively. 
+
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
@@ -19,7 +47,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://david.ug"><img src="https://avatars0.githubusercontent.com/u/10559576?v=4" width="100px;" alt=""/><br /><sub><b>David Wampamba</b></sub></a><br /><a href="https://github.com/louiCoder/ONE-WEEK-APP-CHALLENGE/commits?author=davidofug" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/TabbyKat123"><img src="https://avatars3.githubusercontent.com/u/51475285?v=4" width="100px;" alt=""/><br /><sub><b>TabbyKat123</b></sub></a><br /><a href="https://github.com/louiCoder/ONE-WEEK-APP-CHALLENGE/commits?author=TabbyKat123" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/Stuartkal"><img src="https://avatars0.githubusercontent.com/u/47181425?v=4" width="100px;" alt=""/><br /><sub><b>stuartkal</b></sub></a><br /><a href="https://github.com/louiCoder/ONE-WEEK-APP-CHALLENGE/commits?author=stuartkal" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/moremiles"><img src="https://avatars2.githubusercontent.com/u/5358356?v=4" width="100px;" alt=""/><br /><sub><b>moremiles</b></sub></a><br /><a href="https://github.com/louiCoder/ONE-WEEK-APP-CHALLENGE/commits?author=moremiles" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/morelmiles"><img src="https://avatars2.githubusercontent.com/u/5358356?v=4" width="100px;" alt=""/><br /><sub><b>moremiles</b></sub></a><br /><a href="https://github.com/louiCoder/ONE-WEEK-APP-CHALLENGE/commits?author=morelmiles" title="Code">💻</a></td>
   </tr>
 </table>
 
