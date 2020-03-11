@@ -15,5 +15,5 @@ app.get('/', (req, res) => {
 })
 
 app.listen(PORT, () => {
-  console.log('One week challenge server is running on port 3000');
+  console.log(`One week challenge server is running on port ${PORT}`)
 });
