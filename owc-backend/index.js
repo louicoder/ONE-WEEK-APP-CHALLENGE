@@ -1,6 +1,10 @@
-const app = require('http');
-const server = app.createServer();
+const express = require('express');
+const app = express();
 
-server.listen(3000, () => {
+app.get('/', (req, res) => {
+  res.send('Oooops!!')
+})
+
+app.listen(3000, () => {
   console.log('One week challenge server is running on port 3000');
 });

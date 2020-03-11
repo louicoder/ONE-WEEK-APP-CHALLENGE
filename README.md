@@ -14,7 +14,7 @@ The web application will is built in React Js but also Using Redux and Redu-Saga
 - run the application `yarn start`
 
 ## BACK-END:
-The Backend is an API built using NodeJS, Mongoose, Firebase and MongoDB.
+The Backend is an API built using NodeJS, Firebase or MongoDB and Mongoose.
 
 ### instructions:
 - clone the repository `git clone https://github.com/louiCoder/ONE-WEEK-APP-CHALLENGE.`
