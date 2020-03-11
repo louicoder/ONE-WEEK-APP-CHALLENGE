@@ -7,7 +7,7 @@
   "author": "louicoder <musanje2010@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "dev index.js"
+    "dev": "nodemon app.js"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
