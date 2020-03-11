@@ -1,6 +1,6 @@
 # 😎ONE-WEEK-APP-CHALLENGE 😎
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 This project intends to enable contributors to create a simple application from start to finish in one week.
 
@@ -51,6 +51,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://github.com/morelmiles"><img src="https://avatars3.githubusercontent.com/u/48476293?v=4" width="100px;" alt=""/><br /><sub><b>Luigi Morel</b></sub></a><br /><a href="https://github.com/louiCoder/ONE-WEEK-APP-CHALLENGE/commits?author=morelmiles" title="Code">💻</a></td>
     <td align="center"><a href="https://okenwa.me"><img src="https://avatars3.githubusercontent.com/u/22137617?v=4" width="100px;" alt=""/><br /><sub><b>kenneth okenwa</b></sub></a><br /><a href="https://github.com/louiCoder/ONE-WEEK-APP-CHALLENGE/commits?author=Anekenonso" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Olamide9949"><img src="https://avatars0.githubusercontent.com/u/26090404?v=4" width="100px;" alt=""/><br /><sub><b>Olamide Tosin</b></sub></a><br /><a href="https://github.com/louiCoder/ONE-WEEK-APP-CHALLENGE/commits?author=Olamide9949" title="Code">💻</a></td>
   </tr>
 </table>
 
