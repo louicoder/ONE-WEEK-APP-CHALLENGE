@@ -1,17 +1,15 @@
 import React from 'react';
 // import logo from './logo.svg';
-import './App.css';
+import Landingpage from './components/Layouts/Landingpage';
+import Navbar from './components/Routes/Navbar';
 
-function App () {
-  return (
-    <div className="App">
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-
-        <p>ONE WEEK CHALLENGE COMING SOON.</p>
-      </header>
-    </div>
-  );
+function App() {
+	return (
+		<div>
+			<Navbar />
+			<Landingpage />
+		</div>
+	);
 }
 
 export default App;
