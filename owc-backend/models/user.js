@@ -1,3 +1,4 @@
+require('dotenv').config()
 const mongoose = require('mongoose')
 const validator = require('validator')
 const bcrypt = require('bcrypt')
@@ -44,7 +45,7 @@ userSchema.pre('save', async function(next){
     next()
 })
 
-userSchema.methods.generateAuthToken = async () => {
+userSchema.methods.generateAuthToken = async function(){
     const user = this
     const token = jwt.sign({_id: user._id }, process.env.JWT_KEY)
     user.tokens = user.tokens.concat({ token })
@@ -52,7 +53,7 @@ userSchema.methods.generateAuthToken = async () => {
     return token
 }
 
-userSchema.statics.findByCredentials = async (email, password) => {
+userSchema.statics.findByCredentials = async function(email, password){
     const user = await User.findOne({ email })
     
     if (!user) {
