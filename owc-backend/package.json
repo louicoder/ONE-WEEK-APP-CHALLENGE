@@ -7,7 +7,7 @@
   "author": "louicoder <musanje2010@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon app.js"
+    "dev": "env-cmd -f ./.env nodemon app.js"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
