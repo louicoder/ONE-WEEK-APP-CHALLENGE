@@ -2,7 +2,7 @@ const express = require('express')
 require('./db/db')
 const userRouter = require('./routes/users')
 const expenseRouter = require('./routes/expenses')
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 4000
 
 const app = express();
 
