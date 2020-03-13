@@ -5,6 +5,18 @@ const auth = require('../middleware/auth')
 const router = express.Router()
 
 router.get('/expenses', auth, async function (req, res) {
+    try {
+
+        const { _id } = req.user
+
+        Expense.find({ user: _id }).limit(1)
+            .then(docs => {
+                res.json(docs)
+        })
+        
+    } catch (error) {
+        res.status(400).send(error)
+    }
 })
 
 router.post('/expenses', auth, async function(req, res){
@@ -18,7 +30,7 @@ router.post('/expenses', auth, async function(req, res){
 
         await expense.save()
 
-        res.status(201).send({expense})
+        res.status(201).send({ expense })
         
     } catch (error) {
         res.status(400).send(error)
