@@ -1,7 +1,6 @@
 require('dotenv').config()
 const mongoose = require('mongoose')
 const validator = require('validator')
-const jwt = require('jsonwebtoken')
 
 const expenseSchema = mongoose.Schema({
     user: {
@@ -34,10 +33,11 @@ const expenseSchema = mongoose.Schema({
     }
 })
 
-expenseSchema.pre('save', async function(next){
+/* expenseSchema.pre('save', async function(next){
     const expense = this
     //Probably check for possible duplicates
-})
+}) */
+
 
 
 const expense = mongoose.model('expense', expenseSchema)

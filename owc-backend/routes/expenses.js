@@ -4,17 +4,21 @@ const auth = require('../middleware/auth')
 
 const router = express.Router()
 
-router.get('/expnses', auth, async function (req, res) {
+router.get('/expenses', auth, async function (req, res) {
 })
 
 router.post('/expenses', auth, async function(req, res){
 
     try {
-        const {_id} = req.body
+        const { _id } = req.user
+        
+        req.body.user = _id
 
         const expense = new Expense(req.body)
+
         await expense.save()
-        res.status(201).send({ expnse })
+
+        res.status(201).send({expense})
         
     } catch (error) {
         res.status(400).send(error)
