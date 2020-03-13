@@ -4,7 +4,7 @@ const auth = require('../middleware/auth')
 
 const router = express.Router()
 
-router.get('/expenses', auth, async function (req, res) {
+router.get('api/v1/expenses', auth, async function (req, res) {
     try {
 
         const { _id } = req.user
@@ -19,7 +19,7 @@ router.get('/expenses', auth, async function (req, res) {
     }
 })
 
-router.post('/expenses', auth, async function(req, res){
+router.post('api/v1/expenses', auth, async function(req, res){
 
     try {
         const { _id } = req.user
@@ -37,8 +37,19 @@ router.post('/expenses', auth, async function(req, res){
     }
 })
 
-router.put('/expense/:id', auth, async (req, res) => {
+router.get('api/v1/expense/:id', auth, async (req, res) => {
+    try {
 
+        const { _id } = req.user
+
+        Expense.findOne({ user: _id, _id: parseInt(req.params.id) })
+            .then(docs => {
+                res.json(docs)
+        })
+        
+    } catch (error) {
+        res.status(400).send(error)
+    }
 })
 
 router.delete('/expense/:id', auth, async (req, res) => {
