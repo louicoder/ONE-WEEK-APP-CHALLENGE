@@ -1,37 +1,34 @@
 const express = require('express')
-//const User = require('../models/user')
+const Expense = require('../models/expense')
+const auth = require('../middleware/auth')
 
 const router = express.Router()
 
-router.get('/expnses', async function (req, res) {
-    
+router.get('/expnses', auth, async function (req, res) {
 })
 
-router.post('/expenses', async function(req, res){
+router.post('/expenses', auth, async function(req, res){
 
-/*     try {
-        const user = new User(req.body)
-        await user.save()
-        const token = await user.generateAuthToken()
-        res.status(201).send({ user, token })
+    try {
+        const {_id} = req.body
+
+        const expense = new Expense(req.body)
+        await expense.save()
+        res.status(201).send({ expnse })
         
     } catch (error) {
         res.status(400).send(error)
-    } */
+    }
 })
 
-router.post('/expenses/:id', async function(req, res){
-/*     try {
-        const { email, password } = req.body
-        const user = await User.findByCredentials(email, password)
-        
-        if (!user) {
-            return res.status(401).send({error: 'Login failed! Check credentials'})
-        }
-        const token = await user.generateAuthToken()
-        res.send({ user, token })
-    } catch (error) {
-        res.status(400).send(error)
-    } */
+router.put('/expense/:id', auth, async (req, res) => {
+
 })
+
+router.delete('/expense/:id', auth, async (req, res) => {
+
+})
+
+
+
 module.exports = router

@@ -5,6 +5,13 @@ const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 
 const userSchema = mongoose.Schema({
+    createdAt: {
+        type: Date,
+        default: Date.now()
+    },
+    lastUpdatedAt: {
+        type: Date
+    },
     name: {
         type: String,
         required: true,
