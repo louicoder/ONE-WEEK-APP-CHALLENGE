@@ -4,12 +4,12 @@ const auth = require('../middleware/auth')
 
 const router = express.Router()
 
-router.get('api/v1/expenses', auth, async function (req, res) {
+router.get('/api/v1/expenses', auth, async function (req, res) {
     try {
 
         const { _id } = req.user
 
-        Expense.find({ user: _id }).limit(1)
+        Expense.find({ user: _id })
             .then(docs => {
                 res.json(docs)
         })
@@ -19,7 +19,7 @@ router.get('api/v1/expenses', auth, async function (req, res) {
     }
 })
 
-router.post('api/v1/expenses', auth, async function(req, res){
+router.post('/api/v1/expenses', auth, async function(req, res){
 
     try {
         const { _id } = req.user
@@ -37,12 +37,12 @@ router.post('api/v1/expenses', auth, async function(req, res){
     }
 })
 
-router.get('api/v1/expense/:id', auth, async (req, res) => {
+router.get('/api/v1/expenses/:id', auth, async (req, res) => {
     try {
 
         const { _id } = req.user
 
-        Expense.findOne({ user: _id, _id: parseInt(req.params.id) })
+        Expense.findOne({ user: _id, _id: req.params.id })
             .then(docs => {
                 res.json(docs)
         })
@@ -52,8 +52,18 @@ router.get('api/v1/expense/:id', auth, async (req, res) => {
     }
 })
 
-router.delete('/expense/:id', auth, async (req, res) => {
+router.delete('/api/v1/expenses/:id', auth, async (req, res) => {
+    try {
+        const { _id } = req.user
 
+        const result = await Expense.deleteOne({ user: _id, _id: req.params.id })
+
+        res.status(201).send({ deleted:result.deletedCount })
+
+    } catch (error) {
+
+        res.status(400).send(error)
+    }
 })
 
 
