@@ -1,0 +1,176 @@
+//ColorVariables
+$textThemeColor: rgba(130, 211, 248, 0.884);
+
+//ManageExpenses Styles
+.header {
+	margin: 30px auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 70%;
+}
+
+.balance {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+	width: 25%;
+	border-radius: 5px;
+	box-sizing: border-box;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, .095);
+}
+
+.highest-expense {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+	width: 25%;
+	border-radius: 5px;
+	box-sizing: border-box;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, .095);
+}
+
+.income {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+	width: 25%;
+	border-radius: 5px;
+	box-sizing: border-box;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, .095);
+}
+
+.inner-column {
+	text-align: center;
+	line-height: 5px;
+
+	p {
+		font-size: 13px;
+		font-weight: 500;
+		color: rgba(0, 0, 0, 0.2);
+	}
+
+	h3 {
+		color: rgba(0, 0, 0, 0.7);
+	}
+}
+
+.expenses-container {
+	margin: 10px auto;
+	display: flex;
+	justify-content: center;
+	width: 95%;
+}
+
+.recent-table-expense {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	align-items: center;
+	box-sizing: border-box;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, .095);
+}
+
+//FormExpense Styles
+.form-expense {
+	width: 30%;
+	padding: 20px;
+}
+
+.recent-expense {
+	width: 35%;
+	padding: 20px;
+}
+
+.table-expense {
+	width: 50%;
+}
+
+.form-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	h2 {
+		font-weight: 400;
+		color: $textThemeColor;
+	}
+
+	input {
+		height: 40px;
+		width: 80%;
+		padding-left: 10px;
+		margin-bottom: 10px;
+		border-radius: 5px;
+		border: 1px solid rgba(0, 0, 0, .095);
+	}
+
+	button {
+		width: 150px;
+		height: 30px;
+		margin-bottom: 10px;
+		background: #00c6ff; /* fallback for old browsers */
+		background: -webkit-linear-gradient(to bottom, #00c6ff, #0072ff); /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(
+			to bottom,
+			#00c6ff,
+			#0072ff
+		); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		color: white;
+		border: none;
+		border-radius: 5px;
+	}
+}
+// RecentExpense Styles
+.recent-main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	h2 {
+		font-weight: 400;
+		color: $textThemeColor;
+	}
+}
+.recent-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 90%;
+	& :hover {
+		cursor: pointer;
+	}
+}
+.expense {
+	display: flex;
+	flex-direction: column;
+}
+.expense-type {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	h3 {
+		margin-right: 20px;
+		font-weight: 500;
+	}
+}
+.divider {
+	width: 85%;
+	height: 1px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: rgba(0, 0, 0, .095);
+}
+// ExpenseVisual Styles
+.table-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	h2 {
+		color: $textThemeColor;
+		font-weight: 400;
+	}
+}

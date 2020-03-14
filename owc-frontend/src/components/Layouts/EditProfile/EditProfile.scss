@@ -1,0 +1,46 @@
+.profile-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 20%;
+	padding: 20px;
+	box-sizing: border-box;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, .095);
+
+	p {
+		color: rgba(0, 0, 0, 0.5);
+	}
+}
+
+.avatar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 70px;
+	width: 70px;
+	border-radius: 100px;
+	background-color: rgba(130, 211, 248, 0.884);
+
+	h1 {
+		font-weight: 400;
+		font-size: 40px;
+		color: white;
+	}
+}
+
+.icon-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 40%;
+}
+
+.border-circle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40px;
+	width: 40px;
+	border: 1px solid rgba(130, 211, 248, 0.884);
+	border-radius: 100px;
+}
