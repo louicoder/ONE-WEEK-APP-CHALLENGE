@@ -9,10 +9,11 @@ const expenseSchema = mongoose.Schema({
     },
     createdAt: {
         type: Date,
-        default: Date.now()
+        default: Date.now
     },
     lastUpdatedAt: {
-        type: Date
+        type: Date,
+        default: Date.now
     },
     title: {
         type: String,
@@ -32,16 +33,28 @@ const expenseSchema = mongoose.Schema({
     currency: {
         type: String,
         required: true,
-    }
+    },
+    supplier: {
+        name: String,
+        address: String,
+        phone:String
+    },
+    comments: {
+        type: String,
+        required: false,
+        trim: true
+    },
+    remoteID: string,
+    devices: [
+        {
+            device: {
+                name: String,
+                model: String,
+                serial: String,
+                date: Date.now
+            }
+        }
+    ]
 })
 
-/* expenseSchema.pre('save', async function(next){
-    const expense = this
-    //Probably check for possible duplicates
-}) */
-
-
-
-const expense = mongoose.model('expense', expenseSchema)
-
-module.exports = expense
+module.exports =  mongoose.model('expense', expenseSchema)
