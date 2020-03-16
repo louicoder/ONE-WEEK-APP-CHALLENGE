@@ -51,7 +51,7 @@ const expenseSchema = mongoose.Schema({
                 name: String,
                 model: String,
                 serial: String,
-                date: Date.now
+                date: Date
             }
         }
     ]
