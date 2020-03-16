@@ -44,7 +44,7 @@ const expenseSchema = mongoose.Schema({
         required: false,
         trim: true
     },
-    remoteID: string,
+    remoteID: String,
     devices: [
         {
             device: {
