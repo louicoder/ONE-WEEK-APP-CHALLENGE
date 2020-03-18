@@ -1,0 +1,9 @@
+POST http://localhost:4200/users
+
+Content-Type: application/json
+
+{
+    "name": "David Wampamba",
+    "email" : "DavidofUG@gmail.com",
+    "password": "S!kut@2@2@"
+}
