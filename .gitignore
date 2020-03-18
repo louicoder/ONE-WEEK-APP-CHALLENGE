@@ -1,3 +1,4 @@
-**/node_modules/
-**/owc-backend/node_modules/
-owc-backend/request.rest
+
+node_modules/
+.env
+*.rest
